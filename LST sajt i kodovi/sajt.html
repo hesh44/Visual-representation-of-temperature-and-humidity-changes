@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperatura terarijuma</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+    
+</head>
+<body> 
+      <div class="card" style="width: 21.5rem; border-radius: 20px">
+        <ul class="list-group list-group-flush">
+
+                <div class="card-body">
+                    <h5 class="card-title">Temperatura terarijuma</h5>
+                </div>
+
+                <li class="list-group-item">Temperatura
+                    <div class="switch" style="position: absolute; right: 2%;">  <!-- css-->
+                        <span  id="polje"> 
+                            <div id="poljetext"></div>
+                        </span>   <!-- ovde dolazi temperatura koju povlacimo sa raspberija-->
+                    </div>
+                </li>
+
+                <li class="list-group-item" >Treperenje
+                    <label class="switch" style="position: absolute; right: 2%;">  <!-- css-->
+                        <input type="checkbox" id='toggle-treperenje'>
+                        <span class="slider round" id="dugme1" onclick="upaliTreperenje()"></span> <!--na klik se pali treperenje-->
+                    </label>
+                </li>
+
+                <li class="list-group-item" style=" border-radius: 20px" >Aktiviraj
+                    <label class="switch" style="position: absolute; right: 2%;"> <!-- css-->
+                        <input type="checkbox" id="toggle-upaljeno">
+                        <span class="slider round" id="dugme2" onclick="upali()"></span> <!--na klik se pali sistem-->
+                    </label>
+                </li>
+        </ul>
+      </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
